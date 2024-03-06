@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "extendeditems",
-  "version": "${version}",
+  "version": "${0.1}",
 
   "name": "Extended Items",
   "description": "Adds more items to build",
@@ -19,16 +19,16 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"takomods.ExtendedItems.Extended_Tools"
+			"takomods.extenteditems.ExtendedItems"
     ],
 		"beforeGameStart": [
-			"takomods.ExtendedItems.Extended_Tools"
+			"takomods.extenteditems.ExtendedItems"
 		],
 		"afterGameStart": [
-			"takomods.ExtendedItems.Extended_Tools"
+			"takomods.extenteditems.ExtendedItems"
 		],
 		"recipesReady": [
-			"takomods.ExtendedItems.Extended_Tools"
+			"takomods.extenteditems.ExtendedItems"
 		]
 	},
   "mixins": [
