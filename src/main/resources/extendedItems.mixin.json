@@ -1,9 +1,11 @@
 {
     "required": true,
     "minVersion": "0.8",
-    "package": "takomods.extededitems.mixin",
+    "package": "takomods.extenteditems.mixin",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
+      "CowMixin",
+      "PigMixin"
     ],
     "client": [
     ],

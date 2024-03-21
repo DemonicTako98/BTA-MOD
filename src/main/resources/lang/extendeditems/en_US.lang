@@ -12,4 +12,15 @@ item.extendeditems.ironRod.name=Iron Rod
 item.extendeditems.ironRod.desc=Needed to make diamond steel tools
 item.extendeditems.dSteelIngot.name=Diamond Steel Ingot
 item.extendeditems.dSteelIngot.desc=Stronger material can make better tools
-
+item.extendeditems.dSteelHelmet.name=Diamond Steel Helmet
+item.extendeditems.dSteelHelmet.desc=No more head injuries with this
+item.extendeditems.dSteelChest.name=Diamond Steel Chestplate
+item.extendeditems.dSteelChest.desc=Hit me I dare you
+item.extendeditems.dSteelLegs.name=Diamond Steel Leggings
+item.extendeditems.dSteelLegs.desc=Best pants anyone can have
+item.extendeditems.dSteelBoots.name=Diamond Steel Boots
+item.extendeditems.dSteelBoots.desc=Best kicks out there
+item.extendeditems.foodPorkchopRaw.name=raw meat
+item.extendeditems.foodPorkchopRaw.desc=raw meat from an animal
+item.extendeditems.foodPorkchopCooked.name=cooked meat
+item.extendeditems.foodPorkchopCooked.desc=Well done meat
