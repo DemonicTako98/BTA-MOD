@@ -2,7 +2,6 @@ package takomods.extenteditems.mixin;
 
 import net.minecraft.core.entity.animal.EntityAnimal;
 import net.minecraft.core.entity.animal.EntityCow;
-import net.minecraft.core.item.Item;
 import net.minecraft.core.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -23,11 +22,7 @@ public class CowMixin extends EntityAnimal
 	@Unique
 	protected int getDroppedItemID()
 	{
-		if (this.remainingFireTicks > 0)
-		{
-			return Items.foodPorkchopCooked.id;
-		}
-		return Items.foodPorkchopRaw.id;
+        return Items.foodBeefRaw.id;
 	}
 	@Inject(method = "dropFewItems", at = @At("HEAD"))
 	protected void dropFewItems(CallbackInfo ci)
@@ -35,7 +30,7 @@ public class CowMixin extends EntityAnimal
 		int i = getDroppedItemID();
 		if (i> 0)
 		{
-			int j = this.random.nextInt(2);
+			int j = this.random.nextInt(3) + 1;
 			for(int k = 0; k < j; k++)
 			{
 				this.spawnAtLocation(i, 1);

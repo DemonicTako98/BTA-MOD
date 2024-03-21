@@ -1,12 +1,13 @@
 package takomods.extenteditems.Items;
 
+import net.minecraft.core.block.Block;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemArmor;
-import net.minecraft.core.item.ItemFood;
 import net.minecraft.core.item.ItemFoodStackable;
 import net.minecraft.core.item.tool.*;
 import takomods.extenteditems.ExtendedItems;
 import turniplabs.halplibe.helper.ItemHelper;
+import useless.terrainapi.generation.overworld.api.ChunkDecoratorOverworldAPI;
 
 public class Items
 {
@@ -30,6 +31,8 @@ public class Items
 	//Stackable Food
 	public static Item foodPorkchopRaw = new ItemFoodStackable("foodPorkchopRaw", itemID("rawPork"), 3, true, 4).setIconCoord(7, 5);
 	public static Item foodPorkchopCooked = new ItemFoodStackable("foodPorkchopCooked", itemID("cookedPork"), 8, true, 4).setIconCoord(7, 5);
+	public static Item foodBeefRaw = new ItemFoodStackable("foodBeefRaw", itemID("rawBeef"), 3, true, 4).setIconCoord(7, 5);
+	public static Item foodBeefCooked = new ItemFoodStackable("foodBeefCooked", itemID("cookedBeef"), 8, true, 4).setIconCoord(7, 5);
 	public static void initializeItems()
 	{
 		ItemHelper.createItem(ExtendedItems.MOD_ID, dSteelSword, "dSteelSword.png");
@@ -44,7 +47,10 @@ public class Items
 		ItemHelper.createItem(ExtendedItems.MOD_ID, armorChestplatedSteel, "dSteelChest.png");
 		ItemHelper.createItem(ExtendedItems.MOD_ID, armorLeggingsdSteel, "dSteelLegs.png");
 		ItemHelper.createItem(ExtendedItems.MOD_ID, armorBootsdSteel, "dSteelBoots.png");
+
 		ItemHelper.createItem(ExtendedItems.MOD_ID, foodPorkchopRaw, "rawPork.png");
 		ItemHelper.createItem(ExtendedItems.MOD_ID, foodPorkchopCooked, "cookedPork.png");
+		ItemHelper.createItem(ExtendedItems.MOD_ID, foodBeefRaw, "rawBeef.png");
+		ItemHelper.createItem(ExtendedItems.MOD_ID, foodBeefCooked, "cookedBeef.png");
 	}
 }

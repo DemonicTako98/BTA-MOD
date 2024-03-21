@@ -1,8 +1,9 @@
-package takomods.extenteditems.Items;
+package takomods.extenteditems.util;
 
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
 import takomods.extenteditems.ExtendedItems;
+import takomods.extenteditems.Items.Items;
 import turniplabs.halplibe.helper.RecipeBuilder;
 import turniplabs.halplibe.helper.recipeBuilders.RecipeBuilderShaped;
 

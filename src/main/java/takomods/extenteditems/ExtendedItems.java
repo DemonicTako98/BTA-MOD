@@ -3,14 +3,15 @@ package takomods.extenteditems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import takomods.extenteditems.Items.FurnaceRecipes;
+import takomods.extenteditems.util.FurnaceRecipes;
 import takomods.extenteditems.Items.Items;
-import takomods.extenteditems.Items.Recipes;
+import takomods.extenteditems.util.Recipes;
 import turniplabs.halplibe.util.ConfigUpdater;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
 import turniplabs.halplibe.util.TomlConfigHandler;
 import turniplabs.halplibe.util.toml.Toml;
+import useless.terrainapi.generation.overworld.api.ChunkDecoratorOverworldAPI;
 
 public class ExtendedItems implements ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
     public static final String MOD_ID = "extendeditems";
@@ -39,7 +40,9 @@ public class ExtendedItems implements ModInitializer, GameStartEntrypoint, Recip
 			.addEntry("dSteelLegs", getNextItemID())
 			.addEntry("dSteelBoots", getNextItemID())
 			.addEntry("rawPork", getNextItemID())
-			.addEntry("cookedPork", getNextItemID());
+			.addEntry("cookedPork", getNextItemID())
+			.addEntry("rawBeef", getNextItemID())
+			.addEntry("cookedBeef", getNextItemID());
 
 		config = new TomlConfigHandler(configUpdater, MOD_ID, tomlProperties);
 	}
@@ -48,13 +51,12 @@ public class ExtendedItems implements ModInitializer, GameStartEntrypoint, Recip
 	{
         LOGGER.info("Extended Items initialized.");
 		initializeConfig();
-		Items.initializeItems();
     }
 
 	@Override
 	public void beforeGameStart()
 	{
-
+		Items.initializeItems();
 	}
 
 	@Override
